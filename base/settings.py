@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "blog.apps.BlogConfig",
     "debug_toolbar",
     "api.apps.ApiConfig",
+    "tastypie",
 ]
 
 MIDDLEWARE = [
