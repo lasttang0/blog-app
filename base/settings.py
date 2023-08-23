@@ -24,12 +24,14 @@ SECRET_KEY = "django-insecure-=4)!q18&8hso6bb_%ckg!(52wh0bdpm_wr+jc&w68x0j%wp+02
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", ]
-
-INTERNAL_IPS = [
-    # ...
+# For DEBUG = False
+ALLOWED_HOSTS = [
     "127.0.0.1",
-    # ...
+]
+
+# For DjDT
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 # Application definition
@@ -41,10 +43,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "blog.apps.BlogConfig",
-    "debug_toolbar",
-    "api.apps.ApiConfig",
-    "tastypie",
+    "blog.apps.BlogConfig",  # blog app
+    "debug_toolbar",  # DjDT
+    "api.apps.ApiConfig",  # api app
+    "tastypie",  # django-tastypie lib
 ]
 
 MIDDLEWARE = [
@@ -63,7 +65,7 @@ ROOT_URLCONF = "base.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / 'templates'],
+        "DIRS": [BASE_DIR / 'templates'],  # Common dir for HTML/CSS templates
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
