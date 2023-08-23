@@ -234,3 +234,5 @@ fabric.properties
 *~
 __pycache__
 .idea/
+notes
+.coverage
