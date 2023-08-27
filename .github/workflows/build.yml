@@ -1,0 +1,38 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+
+# Define the job that will run
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # Action to checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Action to set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      # Create and activate a virtual environment
+      - name: Create and activate virtual environment
+        run: |
+          python -m venv .venv  
+          .venv/Scripts/activate.bat  
+
+      # Install project dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip  
+          pip install -r requirements.txt  
+
+      # Run Django tests
+      - name: Run Django tests
+        run: python manage.py test
