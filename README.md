@@ -1,8 +1,10 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
+
 # Django Blog Project with REST API
 
-Blog App is the local Django web application designed for managing a personal blog. Additionally, it provides REST API functionality for accessing blog data.
+Blog App is the local Django web application designed for managing a personal blog. Additionally, it provides REST API
+functionality for accessing blog data.
 
 
 
@@ -11,6 +13,7 @@ Blog App is the local Django web application designed for managing a personal bl
 <details>
   <summary>Table of Contents</summary>
 
+- [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Launch](#launch)
 - [REST API](#rest-api)
@@ -20,7 +23,14 @@ Blog App is the local Django web application designed for managing a personal bl
 - [Code Quality](#code-quality)
 - [License](#license)
 - [Contact](#contact)
+
 </details>
+
+## System Requirements
+
+Before you begin, make sure you have the following software installed on your system:
+
+- Python (version 3.x): You can download Python from [python.org](https://www.python.org/downloads/).
 
 ## Installation
 
@@ -44,12 +54,13 @@ To set up the project, follow these steps on command line:
    ```bash
    python manage.py migrate
    ```      
-   
+
 4. Create a superuser:
- 
+
    ```bash
    python manage.py createsuperuser
    ```     
+
 ## Launch
 
 1. Start the local server:
@@ -71,6 +82,7 @@ To set up the project, follow these steps on command line:
    ```
 
 ## REST API
+
 You can use the REST API to access your blog's data. API endpoints are available at:
 
    ```bash
@@ -87,7 +99,6 @@ Here are some screenshots of the application:
 
 ![Post page](https://github.com/lasttang0/blog-app/blob/main/screenshots/post.png?raw=true)
 
-
 **Admin page**
 
 ![Admin page](https://github.com/lasttang0/blog-app/blob/main/screenshots/admin.png?raw=true)
@@ -100,12 +111,13 @@ Here are some screenshots of the application:
 
 [![Build and Test](https://github.com/lasttang0/blog-app/actions/workflows/build.yml/badge.svg)](https://github.com/lasttang0/blog-app/actions/workflows/build.yml)
 
-This project is continuously integrated and tested using GitHub Actions. Automated tests and checks are run to ensure code quality and maintain project health.
-
+This project is continuously integrated and tested using GitHub Actions. Automated tests and checks are run to ensure
+code quality and maintain project health.
 
 ## Code Quality
 
-- Docstrings are included in the code to provide clear and accessible documentation for each module, function, and class.
+- Docstrings are included in the code to provide clear and accessible documentation for each module, function, and
+  class.
 
 - The project's codebase is covered by unit tests to ensure robustness and reliability.
 
@@ -120,6 +132,7 @@ Distributed under the MIT License. See LICENSE.md for more information
 
 
 <!-- CONTACT -->
+
 ## Contact
 
 Project Link: [https://github.com/lasttang0/blog-app](https://github.com/lasttang0/blog-app)
